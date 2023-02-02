@@ -24,7 +24,7 @@ public class aHomeCtl {
 		
 		logger.info("ahomeTest");
 		
-		return "ahome";
+		return "/admin/ahome";
 	}
 	
 }

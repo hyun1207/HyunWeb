@@ -24,7 +24,7 @@ public class cHomeCtl {
 		
 		logger.info("chomeTest");
 		
-		return "chome";
+		return "/client/chome";
 	}
 	
 }
