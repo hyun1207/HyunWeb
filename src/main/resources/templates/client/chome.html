@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8">
-<title>CHome</title>
-</head>
-<body>
-	<h1>CHome테스트</h1>
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/default_layout}">
+    <!-- ↑ default_layout 사용 -->
+    
+    <th:block layout:fragment="head">
+    	<title>Client Home</title>
+		
+        <!--/* css */-->
+        <link th:href="@{/css/common.css}" rel="stylesheet" />
+    </th:block>
+    
+    <body>
+    	<!-- Header 연결 -->
+        <th:block layout:fragment="header" th:include="@{/fragments/header}"></th:block>
+		
+        <div layout:fragment="content" class="content">
+            <h2>This is Content</h2>
+        </div>
+        
+        <!-- Footer 연결 -->
+        <th:block layout:fragment="footer" th:include="@{/fragments/footer}"></th:block>	
+    </body>
 </html>

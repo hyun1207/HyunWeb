@@ -1,0 +1,27 @@
+#thymeleaf 기본기능 정의
+
+th:attrappend : 속성 값의 뒤에 값을 추가한다.
+th:attrprepend : 속성 값의 앞에 값을 추가한다.
+th:classappend : class 속성에 자연스럽게 추가한다.
+th:text : 데이터 텍스트 값 출력
+th:href : 해당 /url로 이동
+
+ex) 
+컨트롤러에서
+Map<String, Object> foodMap = new HashMap<String, Object>();
+foodMap.put("food1", "치킨");
+foodMap.put("food2", "피자");
+foodMap.put("food3", "족발");
+
+model.addAttribute("foodMap", foodMap);
+
+일 때,
+
+html에서의 데이터 출력 방법은 
+
+<span th:text="${foodMap.food1}"></span> 을 하게 되면 치킨이 출력된다.
+
+
+
+
+ 
