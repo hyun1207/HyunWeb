@@ -1,1 +1,261 @@
 @charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Text Color */
+.txt-color-black {
+  color: #000 !important;
+}
+
+.txt-color-dgray {
+  color: #222 !important;
+}
+
+.txt-color-gray {
+  color: #bbb !important;
+}
+
+.txt-color-ltgray {
+  color: #838383 !important;
+}
+
+.txt-color-red {
+  color: #e60012 !important;
+}
+
+.txt-color-yellow {
+  color: #f7ae00 !important;
+}
+
+.txt-color-cyan {
+  color: #00b1f0 !important;
+}
+
+.txt-color-blue {
+  color: #005b9e !important;
+}
+
+.txt-color-navy {
+  color: #063c6d !important;
+}
+
+.txt-color-skyblue {
+  color: #378ee0 !important;
+}
+
+.txt-color-cobalt {
+  color: #053868 !important;
+}
+
+.txt-color-white {
+  color: #fff !important;
+}
+
+.txt-color-aqua {
+  color: #01b4bb !important;
+}
+
+.txt-color-green {
+  color: #7ec356 !important;
+}
+
+.txt-color-orange {
+  color: #f04e30 !important;
+}
+
+/* bg Color */
+.bg-cyan {
+  background-color: #01b3bb !important;
+}
+
+.bg-blue {
+  background-color: #0066cc !important;
+}
+
+.bg-lt-blue {
+  background-color: #496877 !important;
+}
+
+.bg-sky {
+  background-color: #99ccff !important;
+  color: #333 !important;
+}
+
+.bg-whgrey {
+  background-color: #f5f5f5 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+  color: #005b9e !important;
+}
+
+.bg-grey {
+  background-color: #888888 !important;
+}
+
+.bg-lt-grey {
+  background-color: #eee !important;
+}
+
+.bg-yellow {
+  background-color: #ffcc00 !important;
+}
+
+.bg-green {
+  background-color: #abdc15 !important;
+}
+
+.bg-lt-green {
+  background-color: #ecf3ef !important;
+}
+
+.bg-red {
+  background-color: #ff0033 !important;
+}
+
+.bg-orange {
+  background-color: #ff6633 !important;
+}
+
+/* Text Style */
+.txt-hidden {
+  text-indent: -9999em;
+  font-size: 0;
+  color: transparent;
+}
+
+.txt-cnt {
+  text-align: center !important;
+}
+
+.txt-left {
+  text-align: left !important;
+}
+
+.txt-right {
+  text-align: right !important;
+}
+
+
+@media all and (max-width: 1400px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  html {
+    font-size: 48.5%;
+  }
+}
