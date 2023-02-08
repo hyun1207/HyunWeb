@@ -21,10 +21,22 @@ public class WebSecurityCtl {
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
+	// User 서비스 추가
+	// 웹 서비스 추가
+	
 	@RequestMapping(value = {"","/"}, method = RequestMethod.GET)
-	public String index(Authentication authentication, HttpServletRequest request, HttpServletResponse response, Model model) {
-
-		return "index";
+	public String index(Authentication authentication,
+			HttpServletRequest request,
+			HttpServletResponse response,
+			Model model) {
+		
+		// 인증이 되었다면 index
+		if( authentication != null) {
+			return "index";
+		} else {
+			// 아니라면 login페이지
+			return "login"; 
+		}
 		
     	/**
 		HttpSession session = request.getSession();
