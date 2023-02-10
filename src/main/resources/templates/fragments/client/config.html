@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko"
-	xmlns:th="http://www.thymeleaf.org">
-	<!-- Client config -->
-	
-	<th:block th:fragment="clientconfigFrag">
-	
-	<!-- ========== 라이브러리 CSS 시작 ========== -->
-	
-	<!-- ========== 라이브러리 CSS 종료 ========== -->
-	
-	<!-- ========== CUSTOM CSS 시작 ========== -->
-	<link rel="stylesheet" th:href="@{/css/client/base.css}">
-	<link rel="stylesheet" th:href="@{/css/client/common.css}">
-	<!-- ========== CUSTOM CSS 종료 ========== -->
-	
-<!-- ============================================================ -->
-	
-	<!-- ========== 라이브러리 JS 시작 ========== -->
-	
-	<!-- ========== 라이브러리 JS 종료 ========== -->
-	
-	
-	<!-- ========== CUSTOM JS 시작 ========== -->
-	<!-- ========== 클라이언트 최우선 로드 ========== -->
+      xmlns:th="http://www.thymeleaf.org">
+<!-- Client config -->
+
+<th:block th:fragment="clientconfigFrag">
+
+    <!-- ========== 라이브러리 CSS 시작 ========== -->
+
+    <!-- ========== 라이브러리 CSS 종료 ========== -->
+
+    <!-- ========== CUSTOM CSS 시작 ========== -->
+    <link rel="stylesheet" th:href="@{/css/client/base.css}">
+    <link rel="stylesheet" th:href="@{/css/client/common.css}">
+    <!-- ========== CUSTOM CSS 종료 ========== -->
+
+    <!-- ============================================================ -->
+
+    <!-- ========== 라이브러리 JS 시작 ========== -->
+	<!-- jquery를 사용하기 위함 -->
+    <script th:src="@{/plugins/jquery/jquery.min.js}"></script>
+    <!-- jquery-migrate > console창에 경고 표시 > 이를통해 오류발견 후 수정 가능 -->
+	<script th:src="@{/plugins/jquery-migrate/jquery-migrate.min.js}"></script>
+	<!-- jquery-ui > css/js사용하기위함 -->
+    <script th:src="@{/plugins/jquery-ui/jquery-ui.min.js}"></script>
+	<!-- slick > 슬라이더 -->
+	<script th:src="@{/plugins/slick/slick.min.js}"></script>
+	<!-- wow > 다양한 스크롤 애니메이션 -->
+	<script th:src="@{/plugins/wow/wow.min.js}"></script>
+    <!-- bootstrap -->
+    <script th:src="@{/plugins/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- ========== 라이브러리 JS 종료 ========== -->
 
 
-	
-	<!-- ========== CUSTOM JS 종료 ========== -->
-	
-	
-	</th:block>
-	
+    <!-- ========== CUSTOM JS 시작 ========== -->
+    <!-- ========== 클라이언트 최우선 로드 ========== -->
+
+
+    <!-- ========== CUSTOM JS 종료 ========== -->
+
+
+	<!--
+	사용할만한 플러그인
+	 001. fullPage.js
+
+	 -->
+
+
+</th:block>
+
 </html>
