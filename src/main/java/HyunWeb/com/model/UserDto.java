@@ -26,7 +26,7 @@ public class UserDto {
 	
 	private LocalDateTime updateDttm;	//updateDttm_정보업데이트시간?
 	
-	private String role;				// admin인지 user인지 체크
+	private String role;				// admin인지 / manager인지 / user인지 체크
 	
 	private Long LgnFailCnt;			//Login실패횟수
 	

@@ -14,13 +14,18 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Controller
-@RequestMapping(value = "/client")
+/**
+ * 로그인작성 할 때 주석풀기
+ * @author Seunghyun
+ *
+ */
+/* @RequestMapping(value = "/client") */
 public class cHomeCtl {
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
-	@RequestMapping(value = "" , method = {RequestMethod.GET,RequestMethod.POST} , produces = "application/json; charset=UTF-8") 
-	public String aHome(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping(value = {"","/"} , method = {RequestMethod.GET,RequestMethod.POST} , produces = "application/json; charset=UTF-8") 
+	public String cHome(HttpServletRequest request, HttpServletResponse response) {
 		
 		logger.info("chomeTest");
 		
