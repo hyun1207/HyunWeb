@@ -22,25 +22,24 @@
     <!-- config(css/js) 연결 -->
     <th:block th:replace="fragments/client/config :: clientconfigFrag"></th:block>
     <body>
-    
-    	<!-- Header 연결 -->
+    <div class="full-wrap">
+        <!-- Header 연결 -->
         <th:block layout:fragment="header" th:include="@{/fragments/client/header}"></th:block>
-		
-		<!-- Sidebar 연결 -->
-		<th:block layout:fragment="sidebar" th:include="@{/fragments/client/client_left_side_bar}"></th:block>
-		
+
+        <!-- Sidebar 연결 -->
+        <th:block layout:fragment="sidebar" th:include="@{/fragments/client/client_left_side_bar}"></th:block>
+
         <div layout:fragment="content" class="content">
-            
+
             <div class="content">
-            	Content
+                Content
             </div>
-            
-            
-            
+
+
         </div>
-        
+
         <!-- Footer 연결 -->
-        <th:block layout:fragment="footer" th:include="@{/fragments/client/footer}"></th:block>	
-        
+        <th:block layout:fragment="footer" th:include="@{/fragments/client/footer}"></th:block>
+    </div>
     </body>
 </html>
