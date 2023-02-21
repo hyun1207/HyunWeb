@@ -22,24 +22,28 @@
     <!-- config(css/js) 연결 -->
     <th:block th:replace="fragments/client/config :: clientconfigFrag"></th:block>
     <body>
-    <div class="full-wrap">
+    <div class="app">
         <!-- Header 연결 -->
         <th:block layout:fragment="header" th:include="@{/fragments/client/header}"></th:block>
 
         <!-- Sidebar 연결 -->
         <th:block layout:fragment="sidebar" th:include="@{/fragments/client/client_left_side_bar}"></th:block>
 
-        <div layout:fragment="content" class="content">
+        <th:block layout:fragment="content">
 
-            <div class="content">
-                Content
+            <div class="chome">
+                <div class="search-box">
+                    <input type="text" placeholder="검색어를 입력해 주세요!" id="searchWord" onkeyup="enterKey();" />
+                    <button><i class='bx bx-search'></i></button>
+                </div>
             </div>
-
-
-        </div>
+        </th:block>
 
         <!-- Footer 연결 -->
+<!--
+        사용X
         <th:block layout:fragment="footer" th:include="@{/fragments/client/footer}"></th:block>
+-->
     </div>
     </body>
 </html>
