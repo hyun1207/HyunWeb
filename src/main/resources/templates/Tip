@@ -21,7 +21,19 @@ html에서의 데이터 출력 방법은
 
 <span th:text="${foodMap.food1}"></span> 을 하게 되면 치킨이 출력된다.
 
+th:replace = 대체
 
+==============================
+타임리프 레이아웃 다이얼렉트 설정
+pom.xml 설정
+<dependency>
+<groupId>nz.net.ultraq.thymeleaf</groupId>
+<artifactId>thymeleaf-layout-dialect</artifactId>
+</dependency>
 
+th:include와 th:replace의 차이
+프래그먼트를 참조해서 대체하는 경우 th:replace 속성을 이용한다. 속성 값을 지정하는 방법은 include와 같다.
+th:replace를 이용한 경우, th:replace 속성을 부여한 요소에서 프래그먼트의 내용으로 대체된다.
+=> <div> 요소에서 <footer>요소로 대체
 
- 
+처음 메인화면은 include > 그 다음 컨텐츠들은 replace라고 생각하자
