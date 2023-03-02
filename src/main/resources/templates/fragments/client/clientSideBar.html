@@ -1,7 +1,90 @@
 <!DOCTYPE html>
 <html lagn="ko" xmlns:th="http://www.thymeleaf.org">
-<div th:fragment="clientSideBarFrag">
-  <h2>Header</h2>
-
+<div th:fragment="clientSideBarFrag" class="ctSideBarWrap">
+  <div class="ctSideBar">
+    <div class="sideBarWrap">
+      <!-- 로고 -->
+      <div class="logo">
+        <a th:href="@{/}">
+          <span>Hyun_Web</span>
+        </a>
+        <i class='bx bx-menu menuopen'></i>
+      </div>
+      <!-- 홈 -->
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/home}">
+            <i class='bx bx-home' ></i>
+            <span>Home</span>
+          </a>
+        </li>
+      </ul>
+      <!-- 프로필 -->
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/proFile}">
+            <i class='bx bx-user-circle' ></i>
+            <span>프로필</span>
+          </a>
+        </li>
+      </ul>
+      <!-- 포토폴리오 -->
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/portFolio}">
+            <i class='bx bx-book-content'></i>
+            <span>포토폴리오</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/game}">
+            <i class='bx bx-joystick'></i>
+            <span>Game</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/dailyLifeTip}">
+            <i class='bx bx-bulb' ></i>
+            <span>생활 속 꿀팁</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/study}">
+            <i class='bx bx-pencil' ></i>
+            <span>Study</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/youTube}">
+            <i class='bx bxl-youtube'></i>
+            <span>Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="sideBar">
+        <li>
+          <a th:href="@{/setting}">
+            <i class='bx bx-cog'></i>
+            <span>Setting</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mode-wrapper">
+      <i class='bx bxs-moon mode-icon' ></i>
+      <p>Dark Theme</p>
+      <div class="mode-btn">
+        <span class="mode-ball"></span>
+      </div>
+    </div>
+  </div>
 </div>
 </html>

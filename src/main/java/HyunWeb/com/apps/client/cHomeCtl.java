@@ -26,10 +26,20 @@ public class cHomeCtl {
 	@RequestMapping(value = {"","/"} , method = {RequestMethod.GET,RequestMethod.POST} , produces = "application/json; charset=UTF-8") 
 	public String cHome(HttpServletRequest request, HttpServletResponse response) {
 		
-		logger.info("chomeTest");
+		logger.info("Home Test");
 		
 		return "client/clientMain";
 	}
+
+	@RequestMapping(value = "/proFile", method = {RequestMethod.GET,RequestMethod.POST}, produces = "application/json; charset=UTF-8")
+	public String proFile(HttpServletRequest request, HttpServletResponse response){
+
+		logger.info("proFile Test");
+
+		return "client/clientProFile";
+	}
+
+
 
 
 }

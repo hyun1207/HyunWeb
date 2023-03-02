@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lagn="ko" xmlns:th="http://www.thymeleaf.org">
+<!--Client-->
+<th:block th:fragment="clientConfigFrg">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" th:href="@{/plugins/jquery-ui.min.css}">
+    <link rel="stylesheet" th:href="@{/plugins/bootstrap.min.css}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/client/base.css}">
+    <link rel="stylesheet" th:href="@{/css/client/common.css}">
+
+
+    <!-- Common JS lib -->
+    <script th:src="@{/plugins/jquery/jquery.min.js}"></script>
+    <script th:src="@{/plugins/jquery-migrate/jquery-migrate.min.js}"></script>
+    <script th:src="@{/plugins/jquery-ui/jquery-ui.min.js}"></script>
+    <script th:src="@{/plugins/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{/plugins/bootstrap/js/bootstrap.bundle.js}"></script>
+
+    <!-- Custom JS lib -->
+    <script th:src="@{/js/client/common.js}"></script>
+
+</th:block>
+</html>

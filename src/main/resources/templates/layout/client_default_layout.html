@@ -7,15 +7,18 @@
     <title>Thymeleaf layout</title>
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
 
-    <th:block layout:fragment="css"></th:block>
-    <th:block layout:fragment="script"></th:block>
+    <th:block th:replace="fragments/client/clientConfig :: clientConfigFrg"></th:block>
 </head>
 <body>
-    <!-- Header 연결-->
-    <th:block th:replace="fragments/client/clientHeader :: clientHeaderFrag"></th:block>
-    <!-- Content 연결-->
-    <th:block layout:fragment="content"></th:block>
-    <!-- Footer 연결-->
-    <th:block th:replace="fragments/client/clientFooter :: clientFooterFrag"></th:block>
+    <div class="app">
+        <!-- Header 연결-->
+        <th:block th:replace="fragments/client/clientHeader :: clientHeaderFrag"></th:block>
+        <!-- Side bar 연결 -->
+        <th:block th:replace="fragments/client/clientSideBar :: clientSideBarFrag"></th:block>
+        <!-- Content 연결-->
+        <th:block layout:fragment="content" class="conWrap"></th:block>
+        <!-- Footer 연결-->
+        <th:block th:replace="fragments/client/clientFooter :: clientFooterFrag"></th:block>
+    </div>
 </body>
 </html>

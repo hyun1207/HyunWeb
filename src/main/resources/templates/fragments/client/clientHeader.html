@@ -1,7 +1,62 @@
 <!DOCTYPE html>
 <html lagn="ko" xmlns:th="http://www.thymeleaf.org">
-<div th:fragment="clientHeaderFrag">
-    <h2>Header</h2>
+<div th:fragment="clientHeaderFrag" class="ctHeaderWrap">
+    <div class="ctHeader">
+        <div class="navWrap">
+            <!-- 프로필 -->
+            <ul class="nav">
+                <li>
+                    <a th:href="@{/proFile}">
+                        프로필
+                    </a>
+                </li>
+            </ul>
+            <!-- 포토폴리오 -->
+            <ul class="nav">
+                <li>
+                    <a th:href="@{/portFolio}">
+                        포토폴리오
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li>
+                    <a th:href="@{/game}">
+                        Game
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li>
+                    <a th:href="@{/dailyLifeTip}">
+                        생활 속 꿀팁
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li>
+                    <a th:href="@{/study}">
+                        Study
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li>
+                    <a th:href="@{/youTube}">
+                        Youtube
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="loginBox">
+            <div class="login">
+                <a th:href="@{/login}">로그인</a>
+            </div>
+            <div class="signup">
+                <a th:href="@{signup}">회원가입</a>
+            </div>
+        </div>
+    </div>
 
 </div>
 </html>

@@ -4,6 +4,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+
+	--transition: all .2s ease;
 }
 
 body{
@@ -11,18 +14,18 @@ body{
 	height:100vh;
 	padding: 5%;
 	margin:0;
+	background: #b8daff;
 }
 /** 최상단 페이지 **/
 .app{
 	background-color: rgba(16 18 27 / 30%);
-	max-width: 1380px;
+	width: 100%;
 	max-height: 865px;
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
 	border-radius: 10px;
 	backdrop-filter: blur(10px);
 	font-size: 15px;
@@ -31,54 +34,151 @@ body{
 }
 
 /* Header */
-.header_wrap{
+.ctHeaderWrap{
+	width: 85%;
+	height: 50px;
 	position: fixed;
-	display: flex;
-	top: 0;
 	right: 0;
-	width: 82%;
-	height: 5%;
-	z-index: 100;
-	justify-content: space-between;
-	text-align: center;
+	top: 0px;
 	background: rgba(255,255,255,0.7);
-	align-items: center;
+	text-align: center;
 	border: 3px solid black;
+	text-decoration: none;
+	align-items: center;
 }
-.header_setting{
+.ctHeader{
+	display: flex;
 	width: 100%;
-	display: flex;
+	height: 100%;
 }
-.header_Menu{
-	width: 90%;
-	display: flex;
-	justify-content: space-evenly;
+.ctHeader a{
+	text-decoration: none;
 }
-.header_Login_Box{
-	width: 10%;
+.navWrap{
 	display: flex;
 	justify-content: space-between;
+	width:80%;
+	padding: 0 10px 0 10px;
 }
+.loginBox{
+	display: flex;
+	width: 20%;
+}
+
 
 /* left_sidebar_wrap */
-.left_sidebar_wrap{
+.ctSideBarWrap{
 	position: fixed;
+	width: 15%;
+	height: 80vh;
 	top: 0;
-	left: 0;
-	z-index: 100;
-	width: 250px;
-	height: 100%;
-	background: #fff;
-	padding: 10px 10px;
 	border: 1px solid black;
+	left: 0;
+	background: rgba(255,255,255,0.9);
+	padding: 10px 10px;
+	text-align: center;
+}
+/* 메뉴 닫았을 때 */
+.ctSideBarWrap.menuclose{
+	width: 5%;
+	font-size: 30px;
+}
+.ctSideBarWrap.menuclose .sideBarWrap .logo a{
+	opacity: 0;
+}
+.ctSideBarWrap.menuclose .sideBarWrap span{
+	opacity: 0;
 }
 
-.nav_sidebar{
-
+.ctSideBarWrap a{
+	text-decoration: none;
+}
+.ctSideBar{
+	width: 100%;
+	height: 100%;
+}
+.sideBarWrap{
+	width: 100%;
+	height: 100%;
+}
+.sideBarWrap .sideBar{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.sideBar:hover{
+	background: #b8daff;
 }
 
-.Logo{
-	border-bottom: 1px solid black;
+.logo{
+	width: 100%;
+	height: 30px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.logo menuopen{
+	font-size: 50px;
+	cursor:pointer;
+}
+.bx-menu{
+	font-size: 30px;
+	margin-right: -25px;
+	background: #fff;
+	border-radius: 30px;
+}
+
+/** 다크모드/화이트모드 **/
+.mode-wrapper{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	width: 15%;
+	left: 0;
+	padding: 10px 10px;
+	align-items: center;
+}
+.mode-icon{
+	font-size: 25px;
+}
+.mode-wrapper p{
+	font-size: 20px;
+}
+.mode-btn{
+	width: 50px;
+	height: 25px;
+	background: blue;
+	border-radius: 15px;
+	position: relative;
+}
+.mode-ball{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: black;
+	top: 5px;
+	left: 5px;
+	border-radius: 50%;
+}
+/** 다크모드/화이트모드 종료 **/
+
+
+
+
+
+
+.conWrap{
+	position: relative;
+	top: 50px;
+	width: 100%;
+	left: 15%;
+	background: #e2e2e2;
+	height: 100%;
 }
 
 /* Client Home */
